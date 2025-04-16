@@ -5,7 +5,7 @@ apply plugin: 'com.wzc.string.obfuscate'
 android {
     signingConfigs {
         release {
-            storeFile file('D:\\Program Files (x86)\\Android\\android-sdk\\release.jks')
+            storeFile file('C:\\Users\\Administrator\\release.jks')
             storePassword '123456'
             keyAlias 'key0'
             keyPassword '123456'
@@ -45,6 +45,7 @@ BlackObfuscator {
     // 需要混淆的包或者类(匹配前面一段)
     obfClass = ["com.lhy"]
 }
+
 stringObfuscate {
     openLog = true
     // 添加需要混淆的包名
@@ -53,7 +54,7 @@ stringObfuscate {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
-    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
     compileOnly 'de.robv.android.xposed:api:82'
     compileOnly fileTree(include: ['*.jar'], dir: 'libs')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
