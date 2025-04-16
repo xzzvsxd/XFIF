@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">XFIF</string>
+    <string name="update_log">版本号3.7 \n\n新增对新版FIF的支持\n\n\n版本号3.3 \n\n新增验证\n\n\n版本号3.2 \n\n1.支持FIF6.5.5+\n2.去除答题等待时间，实现自动跳关\n3.各个题目分数分布得更更加随机，更加优化了总分与其他分数的生成逻辑\n4.And更多的细节改动~  \n\n\n版本号3.1 \n\n1.去除进入问题时加载的三秒动画\n2.各个题目分数分布得更加随机，优化了总分与其他分数的生成逻辑\n3.And更多的细节改动~  \n\n\n版本号3.0 \n\n1.修复作者弃坑许久的Bug，支持Android4.0.3–Android12系统\n2.支持5.0.0–6.0.2所有版本的FIF口语训练学生版自定义分数  \n\n\n版本号1.3 \n\n1.修复权限申请的Bug，支持4.0.3+的系统 \n\n\n版本号1.1 \n\n1.修复ANDROID 7.0以上不能运行的BUG</string>
+    <string name="about">当前版本 XFIF 3.7</string>
+</resources>

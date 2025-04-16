@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/AppTheme.ActionBar"
+        app:title="XFIF">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:actionBarSize"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/qq_left"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="您的UserId为：NULL"-->
+<!--            android:textColor="#000"-->
+<!--            android:textIsSelectable="true"-->
+<!--            tools:ignore="HardcodedText" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/score_tip_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="当前分数范围已被修改为："
+                android:textColor="#000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/score_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Null"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入要修改的分数范围, 格式为：80~95"
+            android:maxLength="10"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="HardcodedText"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <CheckBox
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动过关"
+            android:id="@+id/checkBox"
+            android:checked="true" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="使用说明：\n1.安装完本模块必须要重启手机才可以使用，软件支持FIF口语训练5.0.0+版本；\n2.建议修改分数的范围为1-100，默认80-95，软件不会对大于100的分数做处理；\n3.请在进行口语训练之前修改分数，否则将会无效；\n4.如果使用本软件出现任何问题，软件作者概不负责！"
+            android:textIsSelectable="true"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="本软件仅供交流和测试 @Tik Kid\n更新 / 维护 @GrandThief"
+        android:textColor="@android:color/holo_orange_dark"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
